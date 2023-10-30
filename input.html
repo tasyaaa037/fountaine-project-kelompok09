@@ -1,11 +1,3 @@
-<?php
-session_start();
-require_once 'connection/conn.php';
-require_once 'function_php/input_function.php';
-header("Content-Security-Policy: frame-ancestors 'none';");
-header("X-Frame-Options: DENY");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -157,7 +149,7 @@ header("X-Frame-Options: DENY");
         
         <div class="button-container">
           <input type="submit" name="submit" class="btn btn-primary" value="Kirim" onclick="return toggleNomorKartu();">
-          <a href="welcome.php">
+          <a href="welcome.html">
             <button type="button" class="btn btn-primary">Batal</button>
           </a>
           <button class="btn btn-primary" type="reset" style="margin-left: -10px;">Ulang</button>
